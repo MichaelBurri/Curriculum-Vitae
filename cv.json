@@ -1,0 +1,378 @@
+{
+    "idiomas":{
+        "0":{
+            "text":"Español"
+        },
+        "1":{
+            "text":"English"
+        }
+    },
+    "ES":{
+        "menu":{
+            "0":{
+                "text": "SOBRE MI",
+                "scroll":"#sobreMi"
+            },
+            "1":{
+                "text": "EXPERIENCIA",
+                "scroll":"#experiencia"
+            },
+            "2":{
+                "text": "EDUCACIÓN",
+                "scroll":"#educacion"
+            },
+            "3":{
+                "text": "HABILIDADES",
+                "scroll":"#habilidades"
+            },
+            "4":{
+                "text": "PROYECTOS",
+                "scroll":"#proyectos"
+            },
+            "5":{
+                "text": "IDIOMAS"
+
+            },
+            "6":{
+                "text": "CONTACTO"
+
+            },
+            "7":{
+                "text": "Cambiar idioma"
+            }
+        },
+        "sobremi":{
+            "nombre": ["Nombre:","Michael"],
+            "apellidos": ["Apellidos:","Burri"],
+            "direccion": ["Dirección:","Avda. Andalucía 18, 3ºD, 18014 - Granada"],
+            "telefono": ["Teléfono:","(+34)633044568"],
+            "presentacion":["Sobre mi:","Soy técnico superior en desarrollo de aplicaciones Web especializado en el uso de Bootstrap 4 y VueJs."]
+        },
+        "redesSociales":{
+            "email":{
+                "label":"Email:",
+                "icono":"./images/email.png",
+                "enlace":"tecumseh1993@gmail.com"
+            },           
+            "github":{
+                    "label":"GitHub:",
+                    "icono":"./images/github.png",
+                    "enlace":"https://github.com/MichaelBurri/"
+                },
+            "linkedin":{
+                    "label":"LinkedIn:",
+                    "icono":"./images/linkedin.png",
+                    "enlace":"https://www.linkedin.com/in/michael-burri-b3139446/"
+            }
+        },
+        "experiencia":{
+            "0":{
+                "nombrePuesto":"baritono",
+                "fechaInicio":"33/03/339",
+                "fechaFin":"30/06/3339",
+                "descripcion":"nan",
+                "empresa":"nan"
+            }
+        },
+        "educacion":[
+            {
+                "titulo":"E.S.O.",
+                "fecha":"15/09/2005 - 21/06/2009",
+                "lugar":"IES Villavieja - Berja (Almería)"
+            },
+            {
+                "titulo":"Bachillerato",
+                "fecha":"15/09/2009 - 21/06/2011",
+                "lugar":"IES Sierra de Gádor - Berja (Almería)"
+            },
+            {
+                "titulo":"Grado en Ingeniería Química",
+                "fecha":"15/09/2011 - 21/06/2013, 15/09/2015 - 21/06/2018 (Inacabado)",
+                "lugar":"Universidad de Granada - Granada"
+            },
+            {
+                "titulo":"Técnico Superior en Gestión Forestal",
+                "fecha":"15/09/2011 - 21/06/2015 (Inacabado)",
+                "lugar":"IES Federico García Lorca - Churriana de la Vega"
+            },
+            {
+                "titulo":"Técnico Superior en Desarrollo de Aplicaciones Web",
+                "fecha":"15/09/2019 - 21/06/2021",
+                "lugar":"IES Francisco Ayala - Granada"
+            }
+        ],
+        "educacionLabel":[
+            "Título","Lugar","Fecha"
+        ],
+        "habilidades":[
+                {
+                    "titulo":"Java",
+                    "descripcion": "Es un buen lenguaje",
+                    "imagen":"./images/java.png"
+                },
+                {
+                    "titulo":"JavaScript",
+                    "descripcion": "Es un buen lenguaje",
+                    "imagen":"./images/javascript.png"
+                },
+                {
+                    "titulo":"Vue",
+                    "descripcion": "Es un buen lenguaje",
+                    "imagen":"./images/vue.png"
+                },
+                {
+                    "titulo":"HTML 5",
+                    "descripcion": "Es un buen mojon",
+                    "imagen":"./images/html5.png"
+                },
+                {
+                    "titulo":"CSS3",
+                    "descripcion": "Es un buen lenguaje",
+                    "imagen":"./images/css3.png"
+                },
+                {
+                    "titulo":"Bootstrap",
+                    "descripcion": "Es un buen lenguaje",
+                    "imagen":"./images/bootstrap.jpg"
+                }
+        ],
+        "proyectos":{
+            "0":{
+                "titulo":"Landing page",
+                "linkRepositorio":"https://github.com/MichaelBurri/",
+                "linkProduccion":"https://github.com/MichaelBurri/",
+                "imagen":"./images",
+                "esplicacion":"Este proyecto consiste en crear una landing page con JQuery y  CSS3 flexbox. El contenido se obtiene mediante peticiones AJAX y archivos JSON",
+                "tecnologias":"JavaScript, JQuery, CSS3, HTML5"
+
+            }
+        },
+        "idiomas":[
+            {
+                "idioma":"Inglés",
+                
+                "escucharT":"Comprensión oral",
+                "escuchar":"C2",
+                "escucharBar":"100",
+                "leerT":"Comprensión lectora",                
+                "leer":"C2",
+                "leerBar":"100",
+                "oralT":"Expresión oral",
+                "oral":"C1",
+                "oralBar":"83.33",
+                "escribirT":"Expresión escrita",
+                "escribir":"C1",
+                "escribirBar":"83.33"
+
+            },
+            {
+                "idioma":"Alemán",
+                
+                "escucharT":"Comprensión oral",
+                "escuchar":"B1",
+                "escucharBar":"50",
+                "leerT":"Comprensión lectora",                
+                "leer":"B1",
+                "leerBar":"50",
+                "oralT":"Expresión oral",
+                "oral":"A2",
+                "oralBar":"33.33",
+                "escribirT":"Expresión escrita",
+                "escribir":"A2",
+                "escribirBar":"33.33"
+            }
+        ],
+        "contacto":{
+            "titulo":"Contacto",
+            "nLabel":"Nombre",
+            "nPlace":"Su nombre",
+            "eLabel":"Email",
+            "ePlace":"ejemplo@mail.es",
+            "boton":"Enviar"
+        }
+
+    },
+    "EN":{
+        "menu":{
+            "0":{
+                "text": "ABOUT ME",
+                "scroll":"#sobreMi"
+            },
+            "1":{
+                "text": "EXPERIENCE",
+                "scroll":"#experiencia"
+            },
+            "2":{
+                "text": "EDUCATION",
+                "scroll":"#educacion"
+            },
+            "3":{
+                "text": "SKILLS",
+                "scroll":"#habilidades"
+            },
+            "4":{
+                "text": "PORTFOLIO",
+                "scroll":"#proyectos"
+            },
+            "5":{
+                "text": "LANGUAGES"
+
+            },
+            "6":{
+                "text": "CONTACT ME"
+
+            },
+            "7":{
+                "text": "Change Language"
+            }
+        },
+        "sobremi":{
+            "nombre": ["Name:","Michael"],
+            "apellidos": ["Last Name:","Burri"],
+            "direccion": ["Address:","Avda. Andalucía 18, 3ºD, 18014 - Granada"],
+            "telefono": ["Phone Number:","(+34)633044568"],
+            "presentacion":["About me:","I am a Higher Technician in Development of Web Applications specialized in the usage of Bootstrap 4 and VueJs."]
+        },
+        "redesSociales":{
+            "email":{
+                "label":"Email:",
+                "icono":"./images/email.png",
+                "enlace":"tecumseh1993@gmail.com"
+            },           
+            "github":{
+                    "label":"GitHub:",
+                    "icono":"./images/github.png",
+                    "enlace":"https://github.com/MichaelBurri/"
+                },
+            "linkedin":{
+                    "label":"LinkedIn:",
+                    "icono":"./images/linkedin.png",
+                    "enlace":"https://www.linkedin.com/in/michael-burri-b3139446/"
+            }
+        },
+        "experiencia":{
+            "0":{
+                "nombrePuesto":"baritono",
+                "fechaInicio":"33/03/339",
+                "fechaFin":"30/06/3339",
+                "descripcion":"nan",
+                "empresa":"nan"
+            }
+        },
+        "educacion":[
+            {
+                "titulo":"E.S.O.",
+                "fecha":"15/09/2005 - 21/06/2009",
+                "lugar":"IES Villavieja - Berja (Almería)"
+            },
+            {
+                "titulo":"Bachillerato",
+                "fecha":"15/09/2009 - 21/06/2011",
+                "lugar":"IES Sierra de Gádor - Berja (Almería)"
+            },
+            {
+                "titulo":"Degree in Chemical Engineering",
+                "fecha":"15/09/2011 - 21/06/2013, 15/09/2015 - 21/06/2018 (Unfinished)",
+                "lugar":"University of Granada - Granada"
+            },
+            {
+                "titulo":"Higher Technician in Forest Management",
+                "fecha":"15/09/2011 - 21/06/2015 (Unfinished)",
+                "lugar":"IES Federico García Lorca - Churriana de la Vega"
+            },
+            {
+                "titulo":"Higher Technician in Development of Web Applications",
+                "fecha":"15/09/2019 - 21/06/2021",
+                "lugar":"IES Francisco Ayala - Granada"
+            }
+        ],
+        "educacionLabel":[
+            "Title","Location","Date"
+        ],
+        "habilidades":{
+            "programacion":[
+                {
+                    "titulo":"Java",
+                    "logo":"./images/java.jpg"
+                },
+                {
+                    "titulo":"JavaScript",
+                    "logo":"./images/javascript.jpg"
+                },
+                {
+                    "titulo":"VueJS",
+                    "logo":"./images/vue.jpg"
+                },
+                {
+                    "titulo":"HTML 5",
+                    "logo":"./images/html5.jpg"
+                },
+                {
+                    "titulo":"CSS3",
+                    "logo":"./images/css3.jpg"
+                },
+                {
+                    "titulo":"Bootstrap",
+                    "logo":"./images/bootstrap.jpg"
+                }
+            ]
+        },
+        "proyectos":{
+            "0":{
+                "titulo":"Landing page",
+                "linkRepositorio":"https://github.com/MichaelBurri/",
+                "linkProduccion":"https://github.com/MichaelBurri/",
+                "imagen":"./images",
+                "esplicacion":"This project consists on creating a landing page using JQuery and CSS3 flexbox. Its content is obtained through AJAX requests and JSON files.",                
+                "tecnologias":"JavaScript, JQuery, CSS3, HTML5"
+
+            }
+        },
+        "idiomas":[
+        {
+            "idioma":"English",
+            
+            "escucharT":"Listening",
+            "escuchar":"C2",
+            "escucharBar":"100",
+            "leerT":"Reading",                
+            "leer":"C2",
+            "leerBar":"100",
+            "oralT":"Speaking",
+            "oral":"C1",
+            "oralBar":"83.33",
+            "escribirT":"Writing",
+            "escribir":"C1",
+            "escribirBar":"83.33"
+
+        },{
+            "idioma":"German",
+            
+            "escucharT":"Listening",
+            "escuchar":"B1",
+            "escucharBar":"50",
+            "leerT":"Reading",                
+            "leer":"B1",
+            "leerBar":"50",
+            "oralT":"Speaking",
+            "oral":"A2",
+            "oralBar":"33.33",
+            "escribirT":"Writing",
+            "escribir":"A2",
+            "escribirBar":"33.33"
+
+        }
+        ]
+            
+        ,
+        "contacto":{
+            "titulo":"Contact me",
+            "nLabel":"Name",
+            "nPlace":"Your name",
+            "eLabel":"Email",
+            "ePlace":"example@mail.com",
+            "boton":"Submit"
+        }
+
+    }
+}
