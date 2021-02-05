@@ -56,15 +56,32 @@
                     "enlace":"https://www.linkedin.com/in/michael-burri-b3139446/"
             }
         },
-        "experiencia":{
-            "0":{
-                "nombrePuesto":"baritono",
-                "fechaInicio":"33/03/339",
-                "fechaFin":"30/06/3339",
-                "descripcion":"nan",
-                "empresa":"nan"
+        "experiencia":[
+            {
+                "nombre":"Profesor particular de matemáticas",
+                "fechaInicio":"10/10/2020",
+                "fechaFin":"Actualidad",
+                "descripcion":"Lecciones de matemáticas de 3ºESO",
+                "empresa":"Autónomo"
+            },
+            {
+                "nombre":"Profesor particular de inglés",
+                "fechaInicio":"15/04/2019",
+                "fechaFin":"25/06/2019",
+                "descripcion":"Lecciones de inglés nivel B2",
+                "empresa":"Autónomo"
+            },
+            {
+                "nombre":"Profesor particular de JAVA",
+                "fechaInicio":"30/09/2020",
+                "fechaFin":"06/12/2020",
+                "descripcion":"Introducción a la programación en Java",
+                "empresa":"Autónomo"
             }
-        },
+        ],
+        "experienciaLabel":[
+            "Oficio","Empresa","Fecha","Descripción"
+        ],
         "educacion":[
             {
                 "titulo":"E.S.O.",
@@ -259,15 +276,32 @@
                     "enlace":"https://www.linkedin.com/in/michael-burri-b3139446/"
             }
         },
-        "experiencia":{
-            "0":{
-                "nombrePuesto":"baritono",
-                "fechaInicio":"33/03/339",
-                "fechaFin":"30/06/3339",
-                "descripcion":"nan",
-                "empresa":"nan"
-            }
-        },
+        "experiencia":[
+            {
+                "nombre":"Math private tutor",
+                "fechaInicio":"10/10/2020",
+                "fechaFin":"Present",
+                "descripcion":"Math Lessons 9th grade level",
+                "empresa":"Self-employed"
+            },
+            {
+                "nombre":"English teacher",
+                "fechaInicio":"15/04/2019",
+                "fechaFin":"25/06/2019",
+                "descripcion":" English Lessons B2 level",
+                "empresa":"Self-employed"
+            },
+            {
+                "nombre":"JAVA private tutor",
+                "fechaInicio":"30/09/2020",
+                "fechaFin":"06/12/2020",
+                "descripcion":"Introduction Java programming language",
+                "empresa":"Self-employed"
+            } 
+        ],        
+        "experienciaLabel":[
+            "Job","Company","Date","Description"
+        ],
         "educacion":[
             {
                 "titulo":"E.S.O.",
@@ -354,7 +388,7 @@
                     "link":"https://github.com/MichaelBurri/Curriculum-Vitae",
                     "linkPro":"https://michaelburri.github.io/Curriculum-Vitae/",
                     "imagen":"./images/cv.png",
-                    "descripcion":"En este proyecto hemos desarrollado un CV completo. Hemos practicado con VUE y Bootstrap 4. ",
+                    "descripcion":"The objective of this project is to write a complete CV. We have practiced VUE and Bootstrap 4. ",
                     "tecnologias":"JavaScript, AJAX, JSON, CSS3,Bootstrap 4, Vue HTML5"               
                     
                 }                           

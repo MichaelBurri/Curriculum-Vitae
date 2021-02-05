@@ -4,7 +4,8 @@ var app= new Vue({
         idioma:'ES',
         cv:'null',
         cvRoot:'null',
-        idiomas:'null'
+        idiomas:'null',
+        loading:false
         
     },
     mounted(){    
@@ -18,6 +19,13 @@ var app= new Vue({
         };
         xhttp.open("GET", "cv.json", true);
         xhttp.send();  
+        
+        this.loading = false;
+            setTimeout(() => {
+              this.loading = true;
+            }, 3000)
+            
+         
     },
     methods:{
         cambiarIdioma:function(){
@@ -32,9 +40,6 @@ var app= new Vue({
                 this.idiomas=this.cvRoot.idiomas
             }
         }
-
-    },
-    computed:{
 
     }
 }

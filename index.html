@@ -21,8 +21,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
   </head>
 
-  <body data-spy="scroll" data-target="#barra" data-offset="10" class="p5">
-    <div id="miApp" class="container-fluid"> 
+  <body data-spy="scroll" data-target="#barra" data-offset="10" class="p5" >
+    <div id="miApp" class="container-fluid" > 
       <!-- MAIN -->
       <div class="row">
         <!-- NAV -->
@@ -31,7 +31,6 @@
             <div>
               <img src="images/its-a-me.png" id="myFace" class="rounded-circle" alt="Mi Careto"></img>
             </div>
-            
             <ul class="nav nav-pills">
               <li class="nav-item active">
                 <a class="nav-link" href="#list-item-1">{{cvRoot.menu[0].text}} </a>
@@ -61,8 +60,7 @@
             
           </nav>  
         </div>
-        
-        <!-- <nav class="col-md-2 bg-light d-none d-sm-block">{{cv.idiomas[0].text}}  </nav> -->
+
 
         <!-- CONTENT -->
         <div class="col-md-10 bg-primary p-5" >
@@ -75,7 +73,14 @@
             </div>
             <hr>
             <div class="row" v-for="elem in cvRoot.redesSociales">
-              <div class="col-12"><img class="icono" v-bind:src=elem["icono"] alt=""><b> {{elem["label"]}} </b> <a class="enlaceSocial"> {{elem["enlace"]}} </a> </div> 
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3 icono" :src=elem["icono"] :alt=elem>
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1"><b> {{elem["label"]}} </b></h5>
+                  <a class="enlaceSocial" :href=elem['enlace']> {{elem["enlace"]}} </a>
+                </div>
+              </li>            
             </div>
             
             
@@ -84,7 +89,21 @@
           <!-- EXPERIENCIA -->
           <section id="list-item-2"  style="height: 40vh;">
             <h2 >{{cvRoot.menu[1].text}}</h2>
-            <p>Siiiii.....experiencia.......claro</p>
+            <table class="table table-light table-striped ">
+              <thead class="thead-dark" >
+                <tr>
+                  <th scope="col" v-for="label in cvRoot.experienciaLabel">{{label}}</th>
+                </tr>
+              </thead>
+              <tbody v-for="job in cvRoot.experiencia">
+                <tr>
+                  <td>{{job.nombre}}</td>
+                  <td>{{job.empresa}}</td>
+                  <td>{{job.fechaInicio}}-{{job.fechaFin}}</td>
+                  <td>{{job.descripcion}}</td>
+                </tr>
+              </tbody>
+            </table>
           </section >
           <hr>
           <!-- EDUCACIÓN -->
@@ -227,7 +246,7 @@
                 </div>
       
                 <div class="row form-group text-center">
-                  <input type="submit" :value=[[cvRoot.contacto.boton]] class="col-8 offset-2 col-md-6 offset-md-3 btn btn-lg btn-primary">
+                  <input type="submit" :value=[[cvRoot.contacto.boton]] class="col-8 offset-2 col-md-6 offset-md-3 btn btn-lg btn-secondary">
                 </div>         
       
               </form>
@@ -246,155 +265,4 @@
     <script src="index.js"></script>
   </body>
 
-  <div class="row align-items-center justify-content-between">
-    <!-- order-lg-2 -->
-  </div>
-  <div class="w-100 d-none d-md-block"><!-- dos filas siendo un row -->
-    <!-- col-md-auto se adapta el contenido -->
-  </div>
-    
-
-
-
-
-  <!-- 
-    text-white
-    display-1
-    navbar-expand {sm}
-    collapse.navbar-collapse (desplegable), nav-link, my-md-2 my-lg-0 mx-2
-    mt-0, ml-1, ml-auto, p-3 para margin y padding
-
-  
-    css->reglas generales; bootstrap->cambiar clases
-    
-    <button> class= 'navbar-toggler' type="button" data-toggle
-      <span class="navbar-toggler-icon"></span>
-    </button> 
-    .navbar-dark .navbar-toggler-icon{
-      en los iconos svg stroke='rgba(255,255,255,1)'
-
-    }
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link my-md-2 my-lg-0 mx-2 active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link my-md-2 my-lg-0 mx-2 " href="#">Features</a>
-      <a class="nav-item nav-link my-md-2 my-lg-0 mx-2 " href="#">Pricing</a>
-      <a class="nav-item nav-link my-md-2 my-lg-0 mx-2 " href="#">Disabled</a>
-    </div>
-  </div>
-
-
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-.dropdown-item{
-  color:var(--bg-color);
-}
-----   CARD   ----
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-CARD DECK
- 
-
-FORMULARIO
-<section>
-<div class="row">
-<form class="col-10 offset-1 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10"> class="col-10 offset-1 col-md-8 offset-md-2 col-xl-6 offset-xl-3"
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
-  </div>
-  <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
-            First radio
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            Second radio
-          </label>
-        </div>
-        <div class="form-check disabled">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-          <label class="form-check-label" for="gridRadios3">
-            Third disabled radio
-          </label>
-        </div>
-      </div>
-    </div>
-  </fieldset>
-  <div class="form-group row">
-    <div class="col-sm-2">Checkbox</div>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Example checkbox
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
-    </div>
-  </div>
-</form>
-</div>
-</section>
-   -->
 </html>
