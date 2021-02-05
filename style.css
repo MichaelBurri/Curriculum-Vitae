@@ -92,7 +92,9 @@ body{
   input:invalid{
     border: 2px dashed red;
   }
-
+.modal-body >img{
+  width: 90%;
+}
   /* MEDIAS */
   .card-columns {    
     column-count: 1;    

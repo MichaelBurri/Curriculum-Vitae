@@ -1,13 +1,4 @@
-{
-    "idiomas":{
-        "0":{
-            "text":"Español"
-        },
-        "1":{
-            "text":"English"
-        }
-    },
-    "ES":{
+{    "ES":{
         "menu":{
             "0":{
                 "text": "SOBRE MI",
@@ -107,46 +98,64 @@
         "habilidades":[
                 {
                     "titulo":"Java",
-                    "descripcion": "Es un buen lenguaje",
+                    "descripcion": "Lenguaje de programación multiplataforma",
                     "imagen":"./images/java.png"
                 },
                 {
                     "titulo":"JavaScript",
-                    "descripcion": "Es un buen lenguaje",
+                    "descripcion": "Lenguaje de programación Front End",
                     "imagen":"./images/javascript.png"
                 },
                 {
                     "titulo":"Vue",
-                    "descripcion": "Es un buen lenguaje",
+                    "descripcion": "Potente framework para JS",
                     "imagen":"./images/vue.png"
                 },
                 {
                     "titulo":"HTML 5",
-                    "descripcion": "Es un buen mojon",
+                    "descripcion": "Todo lo necesario para la World Wide Web",
                     "imagen":"./images/html5.png"
                 },
                 {
                     "titulo":"CSS3",
-                    "descripcion": "Es un buen lenguaje",
+                    "descripcion": "Lo mejor para tus estilos",
                     "imagen":"./images/css3.png"
                 },
                 {
                     "titulo":"Bootstrap",
-                    "descripcion": "Es un buen lenguaje",
+                    "descripcion": "El más popular framework de CSS",
                     "imagen":"./images/bootstrap.jpg"
                 }
         ],
-        "proyectos":{
-            "0":{
-                "titulo":"Landing page",
-                "linkRepositorio":"https://github.com/MichaelBurri/",
-                "linkProduccion":"https://github.com/MichaelBurri/",
-                "imagen":"./images",
-                "esplicacion":"Este proyecto consiste en crear una landing page con JQuery y  CSS3 flexbox. El contenido se obtiene mediante peticiones AJAX y archivos JSON",
-                "tecnologias":"JavaScript, JQuery, CSS3, HTML5"
-
-            }
-        },
+        "proyectos":[        
+            {
+                "titulo":"Página de destino",
+                "link":"https://github.com/MichaelBurri/kittens",
+                "linkPro":"https://michaelburri.github.io/kittens/",
+                "imagen":"./images/kittens.png",
+                "descripcion":"Este proyecto consiste en crear una landing page con JQuery y  CSS3 flexbox. El contenido se obtiene mediante peticiones AJAX y archivos JSON",
+                "tecnologias":"JavaScript, JQuery, CSS3, HTML5, FlexBox, DOM, AJAX"               
+                
+            },
+            {
+                "titulo":"API Rest de Ghibli",
+                "link":"https://github.com/MichaelBurri/GhibliAPI",
+                "linkPro":"https://michaelburri.github.io/GhibliAPI/",
+                "imagen":"./images/ghibli.jpg",
+                "descripcion":"Creación de un buscador de películas que recibe información desde la API Rest de StudioGhibli. He practicado el uso de las peticiones AJAX y la API Rest",
+                "tecnologias":"JavaScript, API Rest, AJAX, JSON, CSS3, DOM, HTML5"               
+                
+            },
+            {
+                "titulo":"Curriculum Vitae",
+                "link":"https://github.com/MichaelBurri/Curriculum-Vitae",
+                "linkPro":"https://michaelburri.github.io/Curriculum-Vitae/",
+                "imagen":"./images/cv.png",
+                "descripcion":"En este proyecto hemos desarrollado un CV completo. Hemos practicado con VUE y Bootstrap 4. ",
+                "tecnologias":"JavaScript, AJAX, JSON, CSS3,Bootstrap 4, Vue HTML5"               
+                
+            }                           
+        ],
         "idiomas":[
             {
                 "idioma":"Inglés",
@@ -289,45 +298,67 @@
         "educacionLabel":[
             "Title","Location","Date"
         ],
-        "habilidades":{
-            "programacion":[
-                {
-                    "titulo":"Java",
-                    "logo":"./images/java.jpg"
-                },
-                {
-                    "titulo":"JavaScript",
-                    "logo":"./images/javascript.jpg"
-                },
-                {
-                    "titulo":"VueJS",
-                    "logo":"./images/vue.jpg"
-                },
-                {
-                    "titulo":"HTML 5",
-                    "logo":"./images/html5.jpg"
-                },
-                {
-                    "titulo":"CSS3",
-                    "logo":"./images/css3.jpg"
-                },
-                {
-                    "titulo":"Bootstrap",
-                    "logo":"./images/bootstrap.jpg"
-                }
-            ]
-        },
-        "proyectos":{
-            "0":{
-                "titulo":"Landing page",
-                "linkRepositorio":"https://github.com/MichaelBurri/",
-                "linkProduccion":"https://github.com/MichaelBurri/",
-                "imagen":"./images",
-                "esplicacion":"This project consists on creating a landing page using JQuery and CSS3 flexbox. Its content is obtained through AJAX requests and JSON files.",                
-                "tecnologias":"JavaScript, JQuery, CSS3, HTML5"
-
+        "habilidades":[
+            {
+                "titulo":"Java",
+                "descripcion": "Multiplataform programming language",
+                "imagen":"./images/java.png"
+            },
+            {
+                "titulo":"JavaScript",
+                "descripcion": "Front End programming language",
+                "imagen":"./images/javascript.png"
+            },
+            {
+                "titulo":"Vue",
+                "descripcion": "Powerful JS Framework",
+                "imagen":"./images/vue.png"
+            },
+            {
+                "titulo":"HTML 5",
+                "descripcion": "All you need for the World Wide Web",
+                "imagen":"./images/html5.png"
+            },
+            {
+                "titulo":"CSS3",
+                "descripcion": "The best in Stylesheets",
+                "imagen":"./images/css3.png"
+            },
+            {
+                "titulo":"Bootstrap",
+                "descripcion": "The most popular CSS Framework",
+                "imagen":"./images/bootstrap.jpg"
             }
-        },
+            ],
+            "proyectos":[        
+                {
+                    "titulo":"Landing page",
+                    "link":"https://github.com/MichaelBurri/kittens",
+                    "linkPro":"https://michaelburri.github.io/kittens/",
+                    "imagen":"./images/kittens.png",
+                    "descripcion":"This project consists in creating a landing page using JQuery and CSS3 flexbox. Its content is obtained through AJAX requests and JSON files",
+                    "tecnologias":"JavaScript, JQuery, CSS3, HTML5, FlexBox, DOM, AJAX"               
+                    
+                },
+                {
+                    "titulo":"Ghibli API Rest",
+                    "link":"https://github.com/MichaelBurri/GhibliAPI",
+                    "linkPro":"https://michaelburri.github.io/GhibliAPI/",
+                    "imagen":"./images/ghibli.jpg",
+                    "descripcion":"A film searching engine was created based on Ghibli API Rest. AJAX requests and API Rest technology were used.",
+                    "tecnologias":"JavaScript, API Rest, AJAX, JSON, CSS3, DOM, HTML5"               
+                    
+                },
+                {
+                    "titulo":"Curriculum Vitae",
+                    "link":"https://github.com/MichaelBurri/Curriculum-Vitae",
+                    "linkPro":"https://michaelburri.github.io/Curriculum-Vitae/",
+                    "imagen":"./images/cv.png",
+                    "descripcion":"En este proyecto hemos desarrollado un CV completo. Hemos practicado con VUE y Bootstrap 4. ",
+                    "tecnologias":"JavaScript, AJAX, JSON, CSS3,Bootstrap 4, Vue HTML5"               
+                    
+                }                           
+            ],
         "idiomas":[
         {
             "idioma":"English",
